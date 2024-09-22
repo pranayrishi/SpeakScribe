@@ -5,7 +5,6 @@ import {Navbar} from "./components/navbar";
 import {Login} from './pages/login/login';
 import {Upload} from './pages/upload/upload'
 import {Footer} from './components/footer'
-import {Chat} from './pages/chat/chat'
 import Scrollbar from './pages/home/homescroll'
 import {Assignments} from './pages/assignments/assignments'
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/" element={<Scrollbar />} />
           <Route path="/login" element={<Login />} />
           <Route path="/upload" element={<Upload />} />
-          <Route path="/chat" element={<Chat />} />
           <Route path="/assignments" element={<Assignments />} />
         </Routes>
         </div>
