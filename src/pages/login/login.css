@@ -1,0 +1,73 @@
+@tailwind components;
+@tailwind utilities;
+
+.login-container{
+    background-color: transparent;
+    width:30%;
+    margin: 0 auto;
+    border-radius:12px;
+    height: 200px;
+    padding-top:50px;
+    padding-bottom:150px;
+    margin-top:50px;
+    border-width:5px;
+    margin-bottom:50px;
+    border:1.5px solid purple;
+}
+
+
+
+.horizontal{
+    width:75%;
+}
+
+.smalldescription{
+    margin-top:-10px;
+    color:gray;
+    margin-left:45px;
+    text-align:left;
+}
+
+.google-signin-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:10px;
+  }
+  
+  .google-signin-button:hover {
+    background-color: purple;
+    border:none;
+  }
+  
+  .google-signin-button:focus {
+    outline: none;
+  }
+  
+  .google-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .loginheader{
+    margin-left:45px;
+    text-align:left;
+  }
+
+  .loginimage{
+    width:30%;
+  }
+
+
+  

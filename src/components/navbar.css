@@ -1,0 +1,116 @@
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar{
+    display: flex;
+    align-items:center;
+    padding: 10px 20px;
+    justify-content:space-between;
+    background-color:transparent;
+    border: none;
+    border-radius:16px;
+    
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+a[href],
+a[href]:link{
+  text-decoration: none;
+  color:gray;
+}
+
+.nav{
+    background-color:transparent;
+    margin:10px;
+}
+
+.logoimage{
+    width:50px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.login-button{
+    background-color:black;
+    color:white;
+    border-radius:8px;
+    font-size:1.5rem;
+}
+
+.login-button:hover{
+    background-color:purple;
+    cursor: pointer;
+    padding:5px;
+}
+
+.button {
+    color: white;
+    background-color: purple; 
+    font-weight: 500; /* font-medium */
+    border-radius: 1rem; /* rounded-lg */
+    font-size: 0.875rem; /* text-sm */
+    padding: 0.6rem 1rem; /* px-4 py-2 */
+    text-align: center;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: rgb(80, 0, 80); /* hover:bg-blue-800 */
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(98, 98, 98, 0.5); /* focus:ring-4 focus:ring-blue-300 */
+  }
+  
+  .button:focus-visible {
+    box-shadow: 0 0 0 4px rgba(147, 197, 253, 0.5); /* Similar to focus:ring-blue-300 */
+  }
+  
+  .dark-mode .button {
+    background-color: #2563eb; /* dark:bg-blue-600 */
+  }
+  
+  .dark-mode .button:hover {
+    background-color: #1e40af; /* dark:hover:bg-blue-700 */
+  }
+  
+  .dark-mode .button:focus {
+    box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.5); /* dark:focus:ring-blue-800 */
+  }
+
+  .navbarlink:hover{
+    color:purple;
+  }
+
+  .navbarlink:focus{
+    color:purple;
+   
+
+  }
+
+  .navbarhr{
+    border: none;
+    height: 2px;
+    background-color: #2b2b2b;
+  }
+
+  .displayname{
+    margin-right:-25px;
+  }
+
+  .pfp{
+    width: 2.5rem;
+height: 2.5rem;
+border-radius: 50%;
+margin-right:-30px;
+  }
+  

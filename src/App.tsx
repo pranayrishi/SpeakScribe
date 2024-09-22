@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {Navbar} from "./components/navbar";
+//import {Home} from './pages/home/home';
+import {Login} from './pages/login/login';
+import {Upload} from './pages/upload/upload'
+import {Footer} from './components/footer'
+import {Chat} from './pages/chat/chat'
+import Scrollbar from './pages/home/homescroll'
+import {Assignments} from './pages/assignments/assignments'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div className="site-wrapper">
+        <div className="site-content">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Scrollbar />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/assignments" element={<Assignments />} />
+        </Routes>
+        </div>
+        <Footer />
+        </div>
+      </Router>
     </div>
   );
 }
